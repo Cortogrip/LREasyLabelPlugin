@@ -9,6 +9,7 @@ local data = {
     pluginVersion = "1.0.3",
     serviceJarFile = "./bin/LREasyLabelPrint.jar",
     cannot_connect_service_msg = LOC "$$$/ArtImageShop/service_error=Cannot get response from server",
+    cannot_print_msg = LOC "$$$/ArtImageShop/print_error=Cannot print label.",
     service_error_msg = LOC "$$$/ArtImageShop/server_error=Server error",
     invalid_data_error_msg = LOC "$$$/ArtImageShop/invalid_data_error_msg=Invalid input field",
     doc_page = LOC "$$$/ArtImageShop/doc_page=http://localhost:8087/lr-easy-label-print_en.html",
@@ -17,8 +18,9 @@ local data = {
     print_page_title = LOC "$$$/ArtImageShop/print_page_title=Page",
     print_paper_title = LOC "$$$/ArtImageShop/print_paper_title=Paper",
     print_xpos_title = LOC "$$$/ArtImageShop/print_xpos_title=X Pos",
-    print_ypos_title = LOC "$$$/ArtImageShop/print_ypos_title=Y Pos"
-}
+    print_ypos_title = LOC "$$$/ArtImageShop/print_ypos_title=Y Pos",
+    see_service_console_msg = LOC "$$$/ArtImageShop/see_console_service_msg=See service console",
+  }
 
 -- Create the logger and enable the print function.
 local myLogger = LrLogger( 'exportLogger' )
