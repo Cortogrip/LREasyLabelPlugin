@@ -1,0 +1,54 @@
+:doctype: book
+
+:version: 1.0.0
+:asciidoctor-base-version: 1.5.2
+:imagesdir: ./assets
+
+
+
+= LR Easy Label Print - Version {version}
+
+== Introduction
+This software is a simple Lightroom plugin to produce a printable pdf page that contains the label associated with the selected photo.
+It is composed of 2 different parts. The LR plugin code written in LUA and a service listening for requests (localhost default port 8087).
+
+Documentation on LR Plugin development can be found on https://www.adobe.io/apis/creativecloud/lightroomclassic.html[Lightroom official documentation]
+
+== Getting started
+
+=== Prerequisites
+
+- Java (minimum version 17) must be installed and java must be in path.
+
+== Starting and Stopping Easy Label Service
+
+When your plugin in installed you should be able to start and stop the service from Lightroom interface. Service listen commands on port 8087.
+
+- From Lightroom interface go to File/External module manager and load the plugin.
+- External modules extras/LR Easy Label Print/Start server to start the server
+v
+[WARNING]
+Some firewall can block command from Lightroom. In that case you have to start the service manually.
+
+=== Workaround
+
+- Locate the service jar (LREasyLabelPrint.jar).
+- Open a Powershell cmd.
+- Go to the directory where is located the jar file.
+- Run the command :
+
+[,powershell]
+----
+java -jar "-Dspring.profiles.active=local" LREasyLabelPrint.jar
+----
+
+
+== Printing label
+
+From Library / External module extra
+
+image::screen_01.png[]
+
+Enter image title, Number in serie and paper used, and the x & y position from the page left bottom.
+
+image::screen_02.png[]
