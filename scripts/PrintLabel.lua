@@ -38,6 +38,21 @@ local function print(body)
 			outputToLog( "Print result " .. result )
 		end
 
+
+		if ( result == nil ) then
+			outputToLog( "Print result " .. result )
+			LrDialogs.showError( cannot_print_msg )
+
+		elseif  ( hdrs["status"] ~= 200) then
+			outputToLog( "Server error [" ..  hdrs["status"] .. "]")
+			LrDialogs.showError( service_error_msg .. " (" ..  hdrs["status"] .. ")")
+
+		else
+			outputToLog( "Server is up" )
+            outputToLog( "Message" .. see_service_console_msg )
+			LrDialogs.message( LOC "$$$/ArtImageShop/label_printed=Label printed. See service console", see_service_console_msg )
+		end
+
 	end)
 
 	outputToLog( "print function exiting." )
@@ -195,6 +210,10 @@ end
 -- -------------------------------------------------
 -- Main
 -- -------------------------------------------------
+
+cannot_connect_service_msg = getValue("cannot_print_msg")
+service_error_msg = getValue("service_error_msg")
+see_service_console_msg = getValue("see_service_console_msg")
 outputToLog( "LR Easy Label Print - Version " .. getValue("pluginVersion"))
 getPrintInfoDialog()
 
