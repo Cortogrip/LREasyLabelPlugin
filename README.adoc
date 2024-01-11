@@ -52,3 +52,11 @@ image::screen_01.png[]
 Enter image title, Number in serie and paper used, and the x & y position from the page left bottom.
 
 image::screen_02.png[]
+
+and get command result
+
+image::screen_03.png[]
+
+To locate the pdf file produced, check service console:
+
+image::screen_04.png[]

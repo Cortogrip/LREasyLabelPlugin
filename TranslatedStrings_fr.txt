@@ -13,3 +13,7 @@
 "$$$/ArtImageShop/print_paper_title=Papier"
 "$$$/ArtImageShop/print_xpos_title=Pos X"
 "$$$/ArtImageShop/print_ypos_title=Pos Y"
+"$$$/ArtImageShop/server_error=Erreur du service"
+"$$$/ArtImageShop/print_error=Erreur d'impression"
+"$$$/ArtImageShop/label_printed=Etiquette imprimée"
+"$$$/ArtImageShop/see_console_service_msg=Consulter la console du service"
