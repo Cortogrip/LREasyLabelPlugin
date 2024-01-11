@@ -5,7 +5,7 @@
 :imagesdir: ./assets
 
 
-
+image::banner.png[]
 = LR Easy Label Print - Version {version}
 
 == Introduction
