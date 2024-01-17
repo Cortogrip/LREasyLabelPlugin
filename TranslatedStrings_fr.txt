@@ -7,7 +7,7 @@
 "$$$/ArtImageShop/get_version=Version du serveur"
 "$$$/ArtImageShop/server_error=Erreur serveur"
 "$$$/ArtImageShop/invalid_data_error_msg=Donnée invalide"
-"$$$/ArtImageShop/doc_page=http://localhost:8087/lr-easy-label-print_fr.html"
+"$$$/ArtImageShop/doc_page=http://localhost:8087/docs/lr-easy-label-print_fr.html"
 "$$$/ArtImageShop/print_info_title=Etiquette"
 "$$$/ArtImageShop/print_page_title=Titre"
 "$$$/ArtImageShop/print_paper_title=Papier"

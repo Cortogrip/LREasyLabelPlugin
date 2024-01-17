@@ -17,6 +17,7 @@ local LrHttp = import "LrHttp"
 
 -- Use Common module
 require("Common")
+json = require "JSON.lua"
 
 
 
@@ -49,8 +50,13 @@ local function print(body)
 
 		else
 			outputToLog( "Server is up" )
-            outputToLog( "Message" .. see_service_console_msg )
-			LrDialogs.message( LOC "$$$/ArtImageShop/label_printed=Label printed. See service console", see_service_console_msg )
+
+			outputToLog( "Result : " .. result )
+			local result_ = json.decode(result)
+
+			outputToLog( "Message : " .. result_["message"]  )
+			outputToLog( "Detail  : " .. result_["detail"]  )
+			LrDialogs.message( LOC "$$$/ArtImageShop/label_printed=Label printed. ", "File " .. result_["message"] .. " created.", result_["detail"], "info" )
 		end
 
 	end)
@@ -71,7 +77,7 @@ function preProcessPrint(xPos, yPos, title, paper)
 
 		local photo = catalog:getTargetPhoto()
 		if photo == nil then
-			LrDialogs.message("Hello World", "Please select a photo")
+			LrDialogs.message("Easy Label", "Please select a photo")
 			return
 		end
 

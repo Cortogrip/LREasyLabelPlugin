@@ -12,7 +12,7 @@ local data = {
     cannot_print_msg = LOC "$$$/ArtImageShop/print_error=Cannot print label.",
     service_error_msg = LOC "$$$/ArtImageShop/server_error=Server error",
     invalid_data_error_msg = LOC "$$$/ArtImageShop/invalid_data_error_msg=Invalid input field",
-    doc_page = LOC "$$$/ArtImageShop/doc_page=http://localhost:8087/lr-easy-label-print_en.html",
+    doc_page = LOC "$$$/ArtImageShop/doc_page=http://localhost:8087/docs/lr-easy-label-print_en.html",
     default_paper = "01 - Canson Baryta",
     print_info_title = LOC "$$$/ArtImageShop/print_info_title=Print info",
     print_page_title = LOC "$$$/ArtImageShop/print_page_title=Page",

@@ -12,7 +12,6 @@ return {
 	LrSdkMinimumVersion = 1.3, -- minimum SDK version required by this plug-in
 
 	LrToolkitIdentifier = 'com.abdm.lrplugin.imageshop.label',
-
 	LrPluginName = LOC "$$$/ArtImageShop/PluginName=LR Easy Label Print",
 	
 	-- Add the menu item to the File menu.
@@ -47,7 +46,7 @@ return {
 			file = "Help.lua"
 		}
 	},
-	VERSION = { major=1, minor=0, revision=0, build="20240111-005", },
+	VERSION = { major=1, minor=0, revision=1, build="20240117-010", },
 
 }
 
